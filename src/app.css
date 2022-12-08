@@ -8,3 +8,10 @@ h1 {
   font-size: 96px;
   line-height: 144px;
 }
+h2 {
+  font-family: var(--default-font);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 60px;
+}
