@@ -6,21 +6,21 @@
   margin: 0 auto;
 }
 header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)),
     url("../images/milda-cropped.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
   text-align: center;
-  padding: 260px 0;
+  padding: 200px 0;
 }
 header h1 {
   font-family: var(--default-font);
   font-style: normal;
   font-weight: 700;
   font-size: 96px;
-  line-height: 1.5;
-  margin: 0;
+  line-height: 1;
+  margin: 30px 0;
 }
 header h2 {
   font-family: var(--default-font);
@@ -52,4 +52,19 @@ header a {
   background: white;
   text-decoration: none;
   color: #272044;
+  border-radius: 5px;
+}
+@media (max-width: 900px) {
+  header {
+    padding: 60px 0;
+  }
+  header h1 {
+    font-size: 48px;
+  }
+  header h2 {
+    font-size: 20px;
+  }
+  header h3 {
+    font-size: 12px;
+  }
 }
