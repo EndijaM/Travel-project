@@ -99,7 +99,7 @@ footer a {
 }
 footer a:hover {
   color: rgb(3, 200, 249);
-  font-weight: bold;
+  font-weight: 500;
   opacity: 1;
 }
 section {
