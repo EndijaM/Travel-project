@@ -1,23 +1,55 @@
 :root {
   --default-font: "Poppins", sans-serif;
 }
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
 header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),
     url("../images/milda-cropped.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  color: white;
+  text-align: center;
+  padding: 260px 0;
 }
-h1 {
+header h1 {
   font-family: var(--default-font);
   font-style: normal;
   font-weight: 700;
   font-size: 96px;
-  line-height: 144px;
+  line-height: 1.5;
+  margin: 0;
 }
-h2 {
+header h2 {
   font-family: var(--default-font);
   font-style: normal;
   font-weight: 400;
   font-size: 40px;
-  line-height: 60px;
+  line-height: 1.5;
+  margin: 0;
+}
+header h3 {
+  font-family: var(--default-font);
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 1.5;
+  letter-spacing: 5px;
+  margin: 0;
+}
+header a {
+  display: inline-block;
+  margin-top: 32px;
+  padding: 16px 32px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  background: white;
+  text-decoration: none;
+  color: #272044;
 }
