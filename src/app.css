@@ -1,6 +1,12 @@
 :root {
   --default-font: "Poppins", sans-serif;
 }
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("../images/milda-cropped.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 h1 {
   font-family: var(--default-font);
   font-style: normal;
