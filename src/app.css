@@ -1,10 +1,7 @@
 :root {
   --default-font: "Poppins", sans-serif;
 }
-.container {
-  max-width: 1400px;
-  margin: 0 auto;
-}
+
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)),
     url("../images/milda-cropped.jpg");
@@ -74,10 +71,52 @@ footer p {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
+  line-height: 2;
+  opacity: 0.7;
+  margin-right: 20px;
+}
+footer ul {
+  padding: 0;
+}
+footer li {
+  list-style: none;
+  margin: 0;
+  margin-right: 20px;
+  padding: 0;
+  padding-top: 10px;
+}
+footer a {
+  color: white;
+  font-family: var(--default-font);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
   line-height: 1.5;
   opacity: 0.7;
-}
 
+  text-decoration: none;
+  transition: all 100ms ease-in-out;
+}
+footer a:hover {
+  color: rgb(3, 200, 249);
+  font-weight: bold;
+  opacity: 1;
+}
+section {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr;
+}
+.github-link {
+  opacity: 1;
+}
 @media (max-width: 960px) {
   header {
     padding: 60px 0;
