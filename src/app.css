@@ -72,6 +72,24 @@ main h3 {
   color: #272044;
   margin: 0;
 }
+main h4 {
+  font-family: var(--default-font);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1;
+  color: #272044;
+  margin: 0;
+}
+main h5 {
+  font-family: var(--default-font);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 1;
+  color: #272044;
+  margin: 0;
+}
 main p {
   font-family: var(--default-font);
   font-style: normal;
@@ -80,6 +98,20 @@ main p {
   line-height: 1.5;
   color: #272044;
   opacity: 0.7;
+}
+main .btn {
+  display: block;
+  color: white;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: center;
+  padding: 16px 32px;
+  background: #462cb3;
+  text-decoration: none;
+  letter-spacing: 3px;
+  text-transform: uppercase;
 }
 footer {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
@@ -131,14 +163,20 @@ footer a:hover {
   opacity: 1;
 }
 section {
-  max-width: 1200px;
+  max-width: 100%;
   margin: 0 auto;
-  padding: 100px 15px;
+  padding: 100px;
+}
+section.secondary-section {
+  background: #f8f8f8;
 }
 
 .container {
   max-width: 1400px;
   margin: 0 auto;
+}
+.text-center {
+  text-align: center;
 }
 .grid {
   display: grid;
@@ -148,14 +186,30 @@ section {
 .grid-2-columns {
   grid-template-columns: 1fr 1fr;
 }
+
+.grid-3-columns {
+  grid-template-columns: 1fr 1fr 1fr;
+}
 .grid-3-columns-first-narrow {
   grid-template-columns: 1fr 2fr 2fr;
+}
+
+.card {
+  background: white;
+  margin: 30px 0;
+}
+.card-body {
+  padding: 32px;
+}
+.card-footer {
+  padding: 24px 30px;
 }
 
 .img-responsive {
   max-width: 100%;
   max-height: 500px;
-  margin: 0 auto;
+
+  display: block;
 }
 .github-link {
   opacity: 1;
