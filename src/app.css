@@ -193,10 +193,17 @@ section.secondary-section {
 .grid-3-columns-first-narrow {
   grid-template-columns: 1fr 2fr 2fr;
 }
+.embed {
+  width: 100%;
+  aspect-ratio: 1/1;
+}
 
 .card {
   background: white;
   margin: 30px 0;
+}
+.card-header.grid {
+  grid-gap: 0;
 }
 .card-body {
   padding: 32px;
@@ -206,8 +213,7 @@ section.secondary-section {
 }
 
 .img-responsive {
-  max-width: 100%;
-  max-height: 500px;
+  width: 100%;
 
   display: block;
 }
@@ -237,5 +243,11 @@ section.secondary-section {
 
   .image-center {
     text-align: center;
+  }
+  .card-header img {
+    display: none;
+  }
+  .embed {
+    aspect-ratio: 16/9;
   }
 }
