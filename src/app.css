@@ -219,15 +219,24 @@ section.secondary-section {
 
   display: block;
 }
-.github-link {
+.github-link,
+.netlify-link {
+  color: rgb(111, 141, 232);
+  font-weight: 900;
+  filter: contrast(200%);
   opacity: 1;
 }
+.github-link:hover,
+.netlify-link:hover {
+  font-weight: 900;
+}
+
 @media (max-width: 960px) {
   header {
     padding: 60px 0;
   }
   header h1 {
-    font-size: 48px;
+    font-size: 44px;
   }
   header h2 {
     font-size: 20px;
@@ -238,6 +247,15 @@ section.secondary-section {
   section {
     padding: 30px;
   }
+  main,
+  footer {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  main h3 {
+    font-size: 35px;
+  }
+
   .grid {
     grid-template-columns: 1fr;
     grid-gap: 32px;
@@ -248,6 +266,10 @@ section.secondary-section {
   }
   .card-header img {
     display: none;
+  }
+  .card-footer {
+    padding: 0;
+    margin-top: 30px;
   }
   .embed {
     aspect-ratio: 16/9;
